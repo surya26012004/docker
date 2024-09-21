@@ -1,5 +1,5 @@
-FROM node:alpine
-COPY . /app
-WORKDIR /app
-CMD node app.js
-RUN echo "Hello World"
+FROM python:3
+COPY . /practice.py
+WORKDIR /practice.py
+CMD [ "python", "./practice.py" ]
+
